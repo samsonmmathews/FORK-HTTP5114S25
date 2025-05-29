@@ -1,12 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <title>Buggy Counter App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Learning GitHub</h1>
-  <p>Addded via online giuthub</p>
+    <h1>Simple Counter App</h1>
+    <p id="welcome">Welcome user</p>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="greetBtn">Greet</button>
+
+    <div class="counter">
+        <h2>Counter: <span id="count">0</span></h2>
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <p>Check the console for logs</p>
+    <script src="script.js"></script>
 </body>
 </html>
