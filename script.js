@@ -17,6 +17,7 @@ function reset() {
     count = 0;
     updateCounter();
     console.log("Counter reset");
+
 }
 
 function updateCounter() {
