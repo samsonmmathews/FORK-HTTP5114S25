@@ -12,14 +12,14 @@ const decrease = () => {
     console.log("Counter decreased")
 }
 
-const reset = () => {
+function reset() {
     count = 0
     updateCounter()
     console.log("Counter reset")
 }
 
-const updateCounter = () => {
-    document.getElementById('count').innerText = count
+function updateCounter() {
+    document.getElementById('count').innerHTML = count;
 }
 
 document.getElementById('greetBtn').addEventListener("click", () => {
