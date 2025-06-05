@@ -1,37 +1,34 @@
-let count = 0
 
-const increase = () => {
-    count += 1
-    updateCounter()
-    console.log("Counter increased")
+let count = 0;
+
+function increase() {
+    count = count + 1;
+    updateCounter();
+    console.log("Counter increased");
 }
 
-const decrease = () => {
-    count -= 1
-    updateCounter()
-    console.log("Counter decreased")
+function decrease() {
+    count = count - 1;
+    updateCounter();
+    console.log("Counter decreased");
 }
 
 function reset() {
-    count = 0
-    updateCounter()
-    console.log("Counter reset")
+    count = 0;
+    updateCounter();
+    console.log("Counter reset");
+
 }
 
 function updateCounter() {
     document.getElementById('count').innerHTML = count;
 }
 
-document.getElementById('greetBtn').addEventListener("click", () => {
-    const nameInput = document.getElementById("name")
-    const name = nameInput.value.trim()
-    if(name === "") {
-        alert("Please enter your name")
-        nameInput.focus()
+document.getElementById('greetBtn').addEventListener("click", function() {
+    const name = document.getElementById("name").value
+    if(name == "") {
+        alert("Please enter your name");
     } else {
-        document.getElementById("welcome").innerText = "Welcome, " + name
-        count += 1
-        updateCounter()
-        console.log("Counter increased by greet")
+        document.getElementById("welcome").innerHTML = "Welcome, " + name;
     }
 })
