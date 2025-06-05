@@ -12,3 +12,13 @@ button {
     margin: 5px;
     padding: 10px 20px;
 }
+
+#incrbutton {
+    background-color: green;
+    font-weight: bold;
+}
+
+#descbutton {
+    background-color: red;
+    font-weight: bold;
+}
