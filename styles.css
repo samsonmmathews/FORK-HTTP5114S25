@@ -15,11 +15,11 @@ button {
 }
 
 #incrbutton {
-    background-color: green;
+    background-color: rgb(173, 243, 173);
     font-weight: bold;
 }
 
 #descbutton {
-    background-color: red;
+    background-color: rgb(254, 167, 167);
     font-weight: bold;
 }
