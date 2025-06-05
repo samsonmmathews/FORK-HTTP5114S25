@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: blueviolet;
+    background-color: #fefefe;
     text-align: center
 }
 
@@ -11,4 +11,5 @@ body {
 button {
     margin: 5px;
     padding: 10px 20px;
+    background-color: bisque;
 }
